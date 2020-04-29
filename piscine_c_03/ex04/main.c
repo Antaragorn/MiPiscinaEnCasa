@@ -1,12 +1,10 @@
 #include <stdio.h>
-#include <string.h>
 
+char	*ft_strstr(char *str, char *to_find);
 int main ()
 {
-  char str[] ="This is a simple string";
-  char * pch;
-  pch = strstr (str,"simple");
-  strncpy (pch,"sample",6);
-  puts (str);
+  char str[] ="El cielo esta enladrillado y me fumao 3 canutos"; 
+  puts (ft_strstr (str,"me"));
+
   return 0;
 }
